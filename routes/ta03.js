@@ -1,14 +1,11 @@
 //TA03 PLACEHOLDER
 const express = require('express');
+
 const router = express.Router();
 
-router.get('/', (req, res, next) => {
-  res.render('pages/ta03', {
-    title: 'Team Activity 03',
-    path: '/ta03', // For pug, EJS
-    activeTA03: true, // For HBS
-    contentCSS: true, // For HBS
-  });
-});
+const productsController = require('../controllers/products-controller');
+
+router.get('/', productsController.getProducts);
+router.get('/search', productsController.getSearchProducts);
 
 module.exports = router;
