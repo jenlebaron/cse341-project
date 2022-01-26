@@ -18,7 +18,7 @@ const mongoose = require('mongoose');
 const cors = require("cors");
 const PORT = process.env.PORT || 5001; // So we can run on heroku || (OR) localhost:5000
 
-const cors = require('cors') // Place this with other requires (like 'path' and 'express')
+
 const app = express();
 
 // Route setup. You can implement more in the future!
