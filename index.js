@@ -76,7 +76,7 @@ app
   )
   .then(result => {
     // This should be your user handling code implement following the course videos
-    app.listen(PORT);
+    app.listen(PORT, () => console.log(`Listening on ${PORT}`));
   })
   .catch(err => {
     console.log(err);
